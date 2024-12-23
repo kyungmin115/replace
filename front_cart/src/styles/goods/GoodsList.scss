@@ -1,0 +1,55 @@
+.goods-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); // 기본 한 줄에 5개
+  gap: 16px; // 카드 사이 간격
+  padding: 16px;
+  width: 80%; // 전체 레이아웃 크기를 화면 너비의 80%로 설정
+  margin: 0 auto; // 중앙 정렬
+  box-sizing: border-box; // padding 포함해서 레이아웃을 맞추기 위함
+
+  // 화면 너비가 1200px 이하일 때
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr); // 한 줄에 4개
+  }
+
+  // 화면 너비가 768px 이하일 때
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); // 한 줄에 2개
+  }
+
+  // 화면 너비가 480px 이하일 때
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr; // 한 줄에 1개
+  }
+}
+
+/* 카테고리 버튼 스타일 */
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* 버튼 간 간격 */
+  margin-bottom: 20px;
+  justify-content: center; /* 버튼을 중앙 정렬 */
+}
+
+.category-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff; /* 파란색 배경 */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: #0056b3; /* 호버 시 어두운 파란색 */
+    transform: scale(1.05); /* 버튼 확대 효과 */
+  }
+
+  &.active {
+    background-color: #0056b3; /* 선택된 카테고리 버튼 색 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
