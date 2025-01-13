@@ -1,0 +1,139 @@
+// components/common/CustomModal.scss
+.custom-modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.custom-modal {
+	position: relative;
+	background: white;
+	border-radius: 20px;
+	padding: 0;
+	outline: none;
+	width: 70%;
+	max-width: 400px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+	.modal-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.modal-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 14px 10px;
+
+		h2 {
+			margin: 0;
+			font-size: 1.25rem;
+			font-weight: 600;
+			color: #333;
+		}
+	}
+
+	.modal-body {
+		padding: 20px;
+		font-size: 1rem;
+		color: #666;
+		line-height: 1.5;
+	}
+
+	.modal-footer {
+		display: flex;
+		justify-content: flex-end;
+		gap: 12px;
+		padding: 20px 24px;
+
+		button {
+			padding: 8px 16px;
+			border-radius: 10px;
+			font-size: 1rem;
+			font-weight: 500;
+			cursor: pointer;
+			transition: all 0.2s;
+
+			&.confirm-btn {
+				background-color: #007bff; // 파란색 계열로 수정
+				color: white;
+				border: none;
+
+				&:hover {
+					background-color: #0056b3; // 파란색 호버 상태
+				}
+			}
+
+			&.cancel-btn {
+				background-color: white;
+				color: #666;
+				border: 1px solid #ddd;
+
+				&:hover {
+					background-color: #f8f9fa;
+				}
+			}
+
+			&.go-to-cart-btn {
+				background-color: #000000; // 검정색 계열로 수정
+				color: white;
+				border: none;
+
+				&:hover {
+					background-color: #333333; // 검정색 호버 상태
+				}
+			}
+
+			&.continue-shopping-btn {
+				background-color: white;
+				color: #666;
+				border: 1px solid #ddd;
+
+				&:hover {
+					background-color: #f8f9fa;
+				}
+			}
+		}
+	}
+}
+
+// 반응형 스타일
+@media (max-width: 768px) {
+	.custom-modal {
+		width: 95%;
+		margin: 20px;
+
+		.modal-header {
+			padding: 16px 20px;
+
+			h2 {
+				font-size: 1.125rem;
+			}
+		}
+
+		.modal-body {
+			padding: 20px;
+		}
+
+		.modal-footer {
+			padding: 16px 20px;
+			flex-direction: column;
+
+			button {
+				width: 100%;
+				padding: 12px;
+			}
+		}
+	}
+}

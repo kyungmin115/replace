@@ -1,0 +1,106 @@
+.goods-search-bar {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 0 16px;
+
+	.search-container {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		width: 700px;
+	}
+
+	.search-type {
+		min-width: 140px;
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid #e2e8f0;
+		padding: 8px 4px;
+		font-size: 14px;
+		color: #4a5568;
+		transition: border-color 0.3s ease;
+
+		&:focus {
+			outline: none;
+			border-color: #3b82f6;
+		}
+	}
+
+	.input-wrapper {
+		position: relative;
+		flex: 1;
+
+		.search-input {
+			width: 100%;
+			padding: 8px 4px;
+			font-size: 16px;
+			border: none;
+			border-bottom: 1px solid #e2e8f0;
+			background: transparent;
+			transition: border-color 0.3s ease;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		.focus-line {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: #3b82f6;
+			transform: scaleX(0);
+			transition: transform 0.3s ease;
+			transform-origin: center;
+
+			&.focused {
+				transform: scaleX(1);
+			}
+		}
+	}
+
+	.button-group {
+		display: flex;
+		gap: 8px;
+	}
+
+	.icon-button {
+		padding: 8px;
+		background: transparent;
+		border: none;
+		color: #4a5568;
+		cursor: pointer;
+		transition: color 0.3s ease;
+
+		&:hover {
+			color: #3b82f6;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.image-modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+
+	.image-modal-content {
+		background: white;
+		padding: 20px;
+		border-radius: 8px;
+		max-width: 600px;
+		position: relative;
+	}
+}

@@ -1,0 +1,250 @@
+.goods-section-container {
+	padding: 40px 20px;
+	width: 90%;
+	margin: 0 auto;
+
+	.goods-section-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 30px;
+
+		.goods-section-h2 {
+			font-family: "Pretendard Variable" !important;
+			font-size: 32px;
+			font-weight: bold;
+			color: black;
+			margin-left: 24px;
+		}
+
+		.go-to-goods-list-button {
+			display: inline-block;
+			text-decoration: none;
+			color: #666;
+			font-weight: 500;
+			font-size: 16px;
+			padding: 8px 16px;
+			border-radius: 8px;
+			transition: background-color 0.3s ease;
+
+			&:hover {
+				color: #333;
+			}
+		}
+	}
+
+	.goods-section-list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 20px;
+		justify-items: center;
+
+		.product-card-container {
+			width: 100%;
+
+			.ProductCard {
+				position: relative;
+				border: 1px solid #eaeaea;
+				border-radius: 16px;
+				background-color: #fff;
+				overflow: hidden;
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+				width: 100%;
+				height: 100%;
+				transition: transform 0.3s ease;
+
+				a {
+					text-decoration: none; /* 밑줄 제거 */
+				}
+
+				&.sold-out {
+					background-color: rgba(0, 0, 0, 0.1);
+					color: #ccc;
+
+					.ProductThumbnail .image {
+						opacity: 0.2; /* 상품 이미지를 불투명하게 처리 */
+					}
+				}
+
+				/* Thumbnail */
+				.thumbnail-container {
+					position: relative;
+					padding-top: 100%; // 1:1 비율 유지
+					background-color: #f8f8f8;
+					overflow: hidden;
+
+					.ProductThumbnail {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+
+						.image {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+					}
+
+					.ProductBadgeList {
+						position: absolute;
+						top: 10px;
+						left: 10px;
+						display: flex;
+						align-items: center;
+						gap: 8px;
+						z-index: 5;
+
+						.ranking-badge {
+							background-color: #007bff;
+							color: #fff;
+							border-radius: 4px;
+							width: 30px;
+							height: 30px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							font-weight: bold;
+							font-size: 16px;
+							z-index: 10;
+							box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+						}
+
+						.sold_out__badge {
+							background-color: #a80000;
+							color: #ffffff;
+							font-size: 14px;
+							font-weight: bold;
+							padding: 4px 8px;
+							border-radius: 4px;
+							text-transform: uppercase;
+							text-align: center;
+							box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+							animation: pulse 1.5s infinite;
+						}
+					}
+				}
+
+				/* Product Info */
+				.product-info {
+					padding: 15px;
+					display: flex;
+					flex-direction: column;
+					flex-grow: 1;
+					justify-content: space-between;
+
+					.ProductStoreName {
+						color: #696969;
+						font-size: 12px;
+						font-weight: bold;
+						text-decoration: none;
+						margin-bottom: 5px;
+					}
+
+					.ProductCardName {
+						font-size: 16px;
+						font-weight: bold;
+						color: #000000;
+						text-decoration: none;
+						margin-bottom: 10px;
+						display: -webkit-box; /* 멀티라인 적용 */
+						-webkit-box-orient: vertical;
+						-webkit-line-clamp: 1; /* 최대 줄 수 */
+						line-clamp: 1;
+						overflow: hidden;
+						text-overflow: ellipsis; /* ...으로 표시 */
+					}
+
+					.ProductCardPrice {
+						font-size: 18px;
+						color: #dc143c; // 카트 컴포넌트와 일관된 빨간색
+						font-weight: bold;
+						text-align: right;
+					}
+
+					.price-number {
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+
+	.loading-container,
+	.no-more-items {
+		text-align: center;
+		padding: 20px;
+		font-size: 16px;
+		color: #888;
+	}
+
+	/* 버튼 스타일 */
+	.load-more-button,
+	.scroll-to-top-button {
+		display: block;
+		margin: 20px auto;
+		padding: 12px 25px;
+		background-color: #007bff;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 16px;
+		text-align: center;
+		transition: background-color 0.3s ease;
+
+		&:hover {
+			background-color: #0056b3;
+		}
+	}
+
+	.scroll-to-top-button {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		font-size: 18px;
+		background-color: #007bff;
+		padding: 10px 15px;
+		border-radius: 50%;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		transition: background-color 0.3s ease;
+
+		&:hover {
+			background-color: #0056b3; /* 진한 빨간색 */
+		}
+	}
+
+	// 반응형 처리
+	@media screen and (max-width: 1200px) {
+		.goods-section-list {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.goods-section-list {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 16px;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		.goods-section-header {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 12px;
+
+			.goods-section-h2 {
+				font-size: 24px;
+			}
+
+			.go-to-goods-list-button {
+				align-self: flex-end;
+			}
+		}
+	}
+}

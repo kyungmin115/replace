@@ -1,0 +1,98 @@
+.payment-complete {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: calc(100vh - 60px);
+	background-color: #f5f5f5;
+	padding-top: 80px;
+
+	.container {
+		width: 100%;
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.card {
+		background: white;
+		border-radius: 16px;
+		padding: 2.5rem;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	.icon-container {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 1.5rem;
+
+		svg {
+			color: #22c55e;
+		}
+	}
+
+	.title {
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: #1f2937;
+		margin-bottom: 2rem;
+	}
+
+	.payment-info {
+		margin: 2rem 0;
+
+		dl {
+			.info-item {
+				display: flex;
+				justify-content: space-between;
+				padding: 1rem 0;
+				border-bottom: 1px solid #e5e7eb;
+				word-break: keep-all; // 단어 단위로 줄바꿈
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+				dt {
+					color: #6b7280;
+					font-size: 1rem;
+					flex-shrink: 0; // dt의 크기가 줄어들지 않도록 설정
+					margin-right: 1rem; // dt와 dd 사이 간격 추가
+					min-width: 80px; // 최소 너비 설정
+				}
+
+				dd {
+					color: #111827;
+					font-weight: 500;
+					text-align: right;
+					flex: 1;
+					white-space: nowrap; // 줄바꿈 방지
+					overflow: hidden; // 넘치는 텍스트 숨기기
+					text-overflow: ellipsis; // 넘치는 텍스트를 ...으로 표시
+				}
+			}
+		}
+	}
+
+	.button-container {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		margin-top: 2rem;
+
+		button {
+			padding: 0.75rem 1.5rem;
+			border-radius: 8px;
+			font-weight: 500;
+			transition: all 0.2s ease;
+
+			&.secondary {
+				background-color: #f3f4f6;
+				color: #4b5563;
+				border: 1px solid #e5e7eb;
+
+				&:hover {
+					background-color: #e5e7eb;
+				}
+			}
+		}
+	}
+}

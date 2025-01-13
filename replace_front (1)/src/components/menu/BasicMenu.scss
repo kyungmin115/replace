@@ -1,0 +1,231 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
+		color 0.3s ease-in-out;
+
+	// 숨겨졌을 때 위로 이동
+	&.hidden {
+		transform: translateY(-100%);
+	}
+
+	// 메인 페이지 초기 상태: 투명 배경
+	&.main-page {
+		background-color: transparent;
+		border: none;
+
+		.nav ul li a,
+		.icons .fas {
+			color: white;
+		}
+
+		button {
+			color: white;
+		}
+
+		// 호버 시 및 스크롤 시 공통 스타일
+		&:hover,
+		&.scrolled {
+			background-color: #fff;
+
+			.nav ul li a,
+			.icons .fas {
+				color: black;
+
+				&:hover {
+					color: #007bff;
+				}
+			}
+
+			button {
+				color: black;
+				&:hover {
+					color: #007bff;
+				}
+			}
+		}
+	}
+
+	// 일반 페이지: 흰색 배경
+	&:not(.main-page) {
+		background-color: #fff;
+	}
+
+	.logo {
+		font-size: 1.5rem;
+		margin-right: 110px;
+
+		img {
+			height: 40px;
+			width: 120px;
+			transition: content 0.3s ease-in-out;
+		}
+	}
+
+	.nav {
+		ul {
+			display: flex;
+			gap: 40px;
+			list-style: none;
+			margin: 0 30px;
+			padding: 0;
+
+			li a {
+				text-decoration: none;
+				font-family: "Pretendard Variable", sans-serif !important;
+				font-weight: bold;
+				font-size: large;
+				color: black;
+				transition: color 0.3s ease-in-out;
+
+				&:hover {
+					color: #007bff;
+				}
+			}
+		}
+	}
+
+	.icons {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		.fas {
+			color: black;
+			font-size: 21px;
+			transition: color 0.3s ease-in-out;
+
+			&:hover {
+				color: #007bff;
+			}
+		}
+
+		.cart-link {
+			position: relative;
+
+			.cart-icon {
+				position: relative;
+			}
+
+			.item-count {
+				position: absolute;
+				top: -5px;
+				right: -5px;
+				background-color: red;
+				color: white;
+				padding: 1px 4px;
+				font-size: 10px;
+				font-weight: bold;
+				border-radius: 50%;
+				min-width: 18px;
+				min-height: 18px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		button {
+			font-weight: bold;
+			background: none;
+			border: none;
+			cursor: pointer;
+			transition: color 0.3s ease-in-out;
+
+			&:hover {
+				color: #007bff;
+			}
+		}
+	}
+}
+
+// 반응형 스타일
+@media (max-width: 1200px) {
+	.header {
+		padding: 10px 15px;
+	}
+
+	.nav ul {
+		gap: 30px;
+	}
+
+	.icons {
+		gap: 15px;
+	}
+
+	.logo {
+		font-size: 1.3rem;
+	}
+
+	.nav ul li a {
+		font-size: medium;
+	}
+}
+
+@media (max-width: 768px) {
+	.header {
+		padding: 10px 10px;
+	}
+
+	.nav ul {
+		display: none; // 메뉴 숨기기 (햄버거 메뉴로 대체 가능)
+	}
+
+	.icons {
+		gap: 10px;
+	}
+
+	.logo {
+		font-size: 1.2rem;
+	}
+
+	.fas {
+		font-size: 18px;
+	}
+
+	// 햄버거 메뉴
+	.hamburger {
+		display: block;
+		cursor: pointer;
+		font-size: 1.5rem;
+	}
+
+	// 햄버거 메뉴 열었을 때
+	.nav.open {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		background-color: rgba(255, 255, 255, 0.9);
+		position: absolute;
+		top: 60px;
+		left: 0;
+		padding: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.header {
+		padding: 8px 8px;
+	}
+
+	.logo {
+		font-size: 1.1rem;
+	}
+
+	.nav ul {
+		gap: 20px;
+	}
+
+	.fas {
+		font-size: 16px;
+	}
+}

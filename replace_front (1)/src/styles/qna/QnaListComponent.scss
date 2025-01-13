@@ -1,0 +1,120 @@
+.qna-community {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 100px;
+	font-family: Arial, sans-serif;
+	color: #333;
+	text-align: right;
+
+	.qna-header {
+		text-align: center;
+		margin-bottom: 20px;
+
+		h1 {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		p {
+			font-size: 16px;
+			color: #777;
+		}
+	}
+
+	.list-active {
+		margin: 0 10px;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 20px;
+		font-size: 0.9rem;
+		font-weight: bold;
+		cursor: pointer;
+		background-color: #e5e7eb;
+		transition: background-color 0.2s ease;
+
+		&:hover {
+			background-color: #2563eb;
+			color: #fff;
+		}
+	}
+
+	.qna-list {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+
+		.qna-item {
+			padding: 15px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			background-color: #f9f9f9;
+			cursor: pointer;
+			transition: background-color 0.3s;
+
+			&:hover {
+				background-color: #f1f1f1;
+			}
+
+			&.secret {
+				background-color: #fff8e1; // 비밀글 배경 색상
+				border-color: #ffcc80;
+			}
+
+			.qna-info {
+				display: flex;
+				justify-content: space-between;
+
+				.qna-id {
+					font-size: 14px;
+					font-weight: bold;
+					color: #777;
+				}
+
+				.qna-title {
+					font-size: 16px;
+					font-weight: bold;
+					color: #333;
+				}
+			}
+
+			.qna-meta {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 10px;
+				font-size: 14px;
+
+				.qna-date {
+					color: #777;
+				}
+
+				.qna-secret-tag {
+					background-color: #ffcc80;
+					color: #333;
+					padding: 2px 8px;
+					border-radius: 5px;
+					font-size: 12px;
+					font-weight: bold;
+				}
+
+				.qna-reply-status {
+					padding: 2px 8px;
+					border-radius: 5px;
+					font-size: 12px;
+					font-weight: bold;
+
+					&.completed {
+						background-color: #81c784; // 답변 완료
+						color: white;
+					}
+
+					&.waiting {
+						background-color: #e57373; // 답변 대기 중
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}

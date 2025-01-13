@@ -1,0 +1,109 @@
+.goods-container {
+	padding-top: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%; // 굿즈 리스트의 최대 너비 설정
+	margin: 0 auto; // 중앙 정렬
+	box-sizing: border-box; // padding 포함해서 레이아웃을 맞추기 위함
+
+	.filters-container {
+		display: flex;
+		width: 100%; // 필터가 전체 너비를 차지하도록 설정
+		padding: 20px 0;
+		justify-content: flex-end;
+
+		.status-filter,
+		.sort-filter {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: 20px;
+
+			label {
+				font-size: 14px;
+				font-weight: bold;
+				color: #333;
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				gap: 10px; // 체크박스와 텍스트 간격
+
+				input[type="checkbox"] {
+					width: 16px;
+					height: 16px;
+
+					&:checked {
+						background-color: #007bff;
+					}
+				}
+			}
+
+			select {
+				padding: 5px 10px;
+				font-size: 14px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+			}
+		}
+	}
+
+	.category-buttons {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px; // 버튼 간 간격
+		margin: 20px 0;
+		justify-content: center; // 버튼을 중앙 정렬
+
+		.category-button {
+			padding: 10px 20px;
+			font-size: 14px;
+			font-weight: bold;
+			color: #fff;
+			background-color: #007bff; // 파란색 배경
+			border: none;
+			border-radius: 30px;
+			cursor: pointer;
+			transition: background-color 0.3s ease, transform 0.2s ease;
+
+			&:hover {
+				background-color: #0056b3; // 호버 시 어두운 파란색
+				transform: scale(1.05); // 버튼 확대 효과
+			}
+
+			&.active {
+				background-color: #0056b3; // 선택된 카테고리 버튼 색
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			}
+		}
+	}
+
+	.goods-list {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr); // 기본 한 줄에 5개
+		gap: 10px; // 카드 사이 간격
+		width: 100%; // 전체 너비 차지
+		margin-bottom: 20px; // 페이지 하단 간격
+		box-sizing: border-box; // padding 포함하여 레이아웃 맞추기
+
+		@media (max-width: 1200px) {
+			grid-template-columns: repeat(4, 1fr); // 한 줄에 4개
+		}
+
+		@media (max-width: 768px) {
+			grid-template-columns: repeat(2, 1fr); // 한 줄에 2개
+		}
+
+		@media (max-width: 480px) {
+			grid-template-columns: 1fr; // 한 줄에 1개
+		}
+	}
+
+	.loading-container {
+		width: 100%;
+		text-align: center;
+		padding: 20px;
+		font-size: 16px;
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,385 @@
+/* 전체 컨테이너 */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+/* 로그인 박스 */
+.login-box {
+  width: 100%;
+  max-width: 450px; /* 기존 500px에서 450px로 축소 */
+  padding: 3.6rem; /* 기존 4rem에서 3.6rem로 축소 */
+  background: #ffffff;
+  border-radius: 10px; /* 기존 12px에서 10px로 조정 */
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1); /* 그림자 크기 약간 축소 */
+  text-align: center;
+}
+
+.login-title {
+  margin-bottom: 1.8rem; /* 기존 2rem에서 1.8rem로 축소 */
+  font-size: 2rem; /* 기존 2.2rem에서 2rem로 축소 */
+  color: #333;
+  font-weight: bold;
+}
+
+/* 폼 그룹 */
+.form-group {
+  margin-bottom: 1.8rem; /* 기존 2rem에서 1.8rem로 축소 */
+  label {
+    display: block;
+    margin-bottom: 0.7rem; /* 기존 0.8rem에서 0.7rem로 축소 */
+    font-size: 1.1rem; /* 기존 1.2rem에서 1.1rem로 축소 */
+    color: #555;
+    text-align: left;
+  }
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.9rem; /* 기존 1rem에서 0.9rem로 축소 */
+  border: 1px solid #ddd;
+  border-radius: 5px; /* 기존 6px에서 5px로 조정 */
+  font-size: 1rem; /* 기존 1.1rem에서 1rem로 축소 */
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+
+  &:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+}
+
+// /* 전체 컨테이너 */
+// .login-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   background-color: #f8f9fa;
+//   font-family: Arial, sans-serif;
+// }
+
+// /* 로그인 박스 */
+// .login-box {
+//   width: 100%;
+//   max-width: 400px; /* 로그인 박스 너비 */
+//   padding: 3rem;
+//   background: #ffffff;
+//   border-radius: 10px;
+//   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+//   text-align: center;
+// }
+
+// .login-title {
+//   margin-bottom: 1.5rem;
+//   font-size: 1.8rem;
+//   color: #333;
+//   font-weight: bold;
+// }
+// /* 폼 그룹 */
+// .form-group {
+//   margin-bottom: 1.5rem;
+//   label {
+//     display: block; /* 라벨을 블록으로 표시 */
+//     margin-bottom: 0.5rem; /* 아래 여백 */
+//     font-size: 1rem; /* 라벨 글자 크기 */
+//     color: #555; /* 라벨 색상 */
+//     text-align: left; /* 라벨 텍스트를 왼쪽 정렬 */
+//   } /* 입력 필드와 다음 요소 간의 간격 */
+// }
+
+// .form-group input {
+//   width: 100%; /* 부모 요소 너비를 기준 */
+//   padding: 0.8rem;
+//   border: 1px solid #ddd;
+//   border-radius: 5px;
+//   font-size: 1rem;
+//   box-sizing: border-box; /* 패딩과 테두리를 포함한 크기 계산 */
+//   transition: border-color 0.3s;
+
+//   &:focus {
+//     border-color: #007bff;
+//     outline: none;
+//   }
+// }
+
+// /* 폼 그룹 */
+// .form-group  {
+//   margin-bottom: 1.5rem;
+
+//   label {
+//     display: block;
+//     margin-bottom: 0.5rem;
+//     font-size: 1rem;
+//     color: #555;
+//   }
+
+//   input {
+//     width: 100%; /* 입력 필드가 부모의 너비를 채움 */
+//     padding: 0.8rem;
+//     border: 1px solid #ddd;
+//     border-radius: 5px;
+//     font-size: 1rem;
+//     transition: border-color 0.3s;
+
+//     &:focus {
+//       border-color: #007bff;
+//       outline: none;
+//     }
+//   }
+// }
+
+/* 로그인 버튼 */
+.login-button {
+  width: 100%; /* 버튼 너비를 입력 필드와 동일하게 */
+  padding: 0.8rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+/* 카카오 로그인 버튼 */
+.kakao-login-button {
+  width: 100%;
+  height: 44.25px;
+  margin-top: 1rem;
+
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: 44.25px; /* 이미지가 버튼의 높이를 완전히 채움 */
+    object-fit: cover; /* 이미지가 버튼 크기를 유지하면서 채워짐 */
+    border-radius: 5px; /* 버튼 모서리와 동일하게 설정 */
+  }
+}
+
+// /* 전체 컨테이너 */
+
+// .login-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   background-color: #f8f9fa;
+//   font-family: Arial, sans-serif;
+// }
+
+// /* 로그인 박스 */
+// .login-box {
+//   width: 100%;
+//   max-width: 400px; /* 모든 요소의 너비를 400px로 제한 */
+//   padding: 3rem;
+//   background: #ffffff;
+//   border-radius: 10px;
+//   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+//   text-align: center;
+// }
+
+// .login-title {
+//   margin-bottom: 1.5rem;
+//   font-size: 1.8rem;
+//   color: #333;
+//   font-weight: bold;
+// }
+
+// /* 폼 그룹 */
+// .form-group {
+//   margin-bottom: 1.5rem;
+
+//   label {
+//     display: block;
+//     margin-bottom: 0.5rem;
+//     font-size: 1rem;
+//     color: #555;
+//   }
+
+//   input {
+//     width: 100%; /* 입력 필드가 부모의 너비를 채우도록 */
+//     padding: 0.8rem;
+//     border: 1px solid #ddd;
+//     border-radius: 5px;
+//     font-size: 1rem;
+//     transition: border-color 0.3s;
+
+//     &:focus {
+//       border-color: #007bff;
+//       outline: none;
+//     }
+//   }
+// }
+
+// /* 로그인 버튼 */
+// .login-button {
+//   width: 100%; /* 버튼도 입력 필드와 동일한 너비로 설정 */
+//   padding: 0.8rem;
+//   background-color: #007bff;
+//   color: #fff;
+//   border: none;
+//   border-radius: 5px;
+//   font-size: 1rem;
+//   font-weight: bold;
+//   cursor: pointer;
+//   transition: background-color 0.3s;
+
+//   &:hover {
+//     background-color: #0056b3;
+//   }
+// }
+// /* 버튼 간격 */
+// .login-box button + .kakao-login-button {
+//   margin-top: 1rem; /* 버튼 간의 간격 추가 */
+// }
+
+// /* 카카오 로그인 버튼 */
+// .kakao-login-button {
+//   width: 100%; /* 너비를 입력 필드와 동일하게 설정 */
+//   height: 44.25px; /* 로그인 버튼의 높이와 동일하게 설정 */
+//   margin: 1rem 0;
+//   display: flex;
+//   align-items: center; /* 내용 세로 중앙 정렬 */
+//   justify-content: center; /* 내용 가로 중앙 정렬 */
+//   background-color: #ffe812; /* 버튼 배경색 */
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   overflow: hidden;
+
+//   img {
+//     width: 100%; /* 너비를 버튼에 맞춤 */
+//     height: 100%; /* 높이를 버튼에 맞춤 */
+//     object-fit: contain; /* 이미지 비율 유지 */
+//   }
+// }
+
+// /* 에러 창 */
+// .error-message {
+//   color: #ff4d4d;
+//   font-size: 14px;
+//   text-align: left;
+// }
+
+// /* 회원가입 링크 */
+// .register-link {
+//   margin-top: 1rem;
+
+//   a {
+//     color: #007bff;
+//     text-decoration: none;
+
+//     &:hover {
+//       text-decoration: underline;
+//     }
+//   }
+// }
+
+// /* 전체 컨테이너 */
+// .login-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   background-color: #f8f9fa;
+//   font-family: Arial, sans-serif;
+// }
+
+// /* 로그인 박스 */
+// .login-box {
+//   width: 100%;
+//   max-width: 450px;
+//   padding: 3rem;
+//   background: #ffffff;
+//   border-radius: 10px;
+//   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+//   text-align: center;
+// }
+
+// .login-title {
+//   margin-bottom: 1.5rem;
+//   font-size: 1.8rem;
+//   color: #333;
+//   font-weight: bold;
+// }
+
+// /* 폼 그룹 */
+// .form-group {
+//   margin-bottom: 1.5rem;
+
+//   label {
+//     display: block;
+//     margin-bottom: 0.5rem;
+//     font-size: 1rem;
+//     color: #555;
+//   }
+
+//   input {
+//     width: 100%;
+//     padding: 0.8rem;
+//     border: 1px solid #ddd;
+//     border-radius: 5px;
+//     font-size: 1rem;
+//     transition: border-color 0.3s;
+
+//     &:focus {
+//       border-color: #007bff;
+//       outline: none;
+//     }
+//   }
+// }
+
+// /* 로그인 버튼 */
+// .login-button {
+//   width: 100%;
+//   padding: 0.8rem;
+//   background-color: #007bff;
+//   color: #fff;
+//   border: none;
+//   border-radius: 5px;
+//   font-size: 1rem;
+//   font-weight: bold;
+//   cursor: pointer;
+//   transition: background-color 0.3s;
+
+//   &:hover {
+//     background-color: #0056b3;
+//   }
+// }
+
+// .kakao-login-button {
+//   display: block;
+//   margin: 0 auto;
+// }
+
+// /*에러 창*/
+// .error-message {
+//   color: #ff4d4d;
+//   font-size: 14px;
+
+//   text-align: left;
+// }
+
+// /* 회원가입 링크 */
+// .register-link {
+//   margin-top: 1rem;
+
+//   a {
+//     color: #007bff;
+//     text-decoration: none;
+
+//     &:hover {
+//       text-decoration: underline;
+//     }
+//   }
+// }

@@ -1,0 +1,71 @@
+.qna-community {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	font-family: Arial, sans-serif;
+	color: #333;
+
+	.header {
+		text-align: center;
+		margin-bottom: 20px;
+
+		h1 {
+			font-size: 28px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		p {
+			font-size: 16px;
+			color: #777;
+		}
+	}
+
+	.qna-list {
+		margin-top: 20px;
+		background-color: #fff;
+		border: 1px solid #ddd;
+		border-radius: 8px;
+
+		.qna-item {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 15px 10px;
+			border-bottom: 1px solid #eee;
+			cursor: pointer;
+			transition: background-color 0.2s;
+
+			&:hover {
+				background-color: #f9f9f9;
+			}
+
+			.qna-info {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+
+				.qna-id {
+					font-size: 14px;
+					color: #888;
+				}
+
+				.qna-title {
+					font-size: 16px;
+					font-weight: bold;
+					color: #333;
+				}
+			}
+
+			.qna-date {
+				font-size: 12px;
+				color: #bbb;
+			}
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+}

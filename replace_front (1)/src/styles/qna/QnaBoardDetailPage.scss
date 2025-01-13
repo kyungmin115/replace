@@ -1,0 +1,12 @@
+.read-page {
+  font-weight: 800; // Extra bold
+  width: 100%;
+  background-color: #ffffff; // White background
+  margin-top: 24px;
+
+  .page-title {
+    font-size: 1.5rem; // Text-2xl equivalent
+    margin-bottom: 16px;
+    color: #1e293b; // Neutral-800 for text color
+  }
+}

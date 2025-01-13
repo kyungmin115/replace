@@ -1,0 +1,74 @@
+/* 전체 컨테이너 스타일 */
+.mypage-container {
+	display: flex;
+	min-height: 100vh;
+	background-color: #f9f9f9;
+	font-family: Arial, sans-serif;
+	padding-top: 60px;
+}
+
+/* 왼쪽 바 스타일 */
+.mypage-sidebar {
+	flex: 0 0 250px; /* 너비를 250px로 증가 */
+	background-color: #ffffff;
+	border-right: 1px solid #ddd;
+	padding: 20px;
+}
+
+.mypage-sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.mypage-sidebar li {
+	padding: 12px 15px; /* 좌우 여백 증가 */
+	margin-bottom: 12px; /* 항목 간 간격 증가 */
+	cursor: pointer;
+	color: #333;
+	transition: all 0.3s ease;
+	border-radius: 5px;
+}
+
+.mypage-sidebar li:hover {
+	background-color: #f0f0f0;
+}
+
+.mypage-sidebar li.active {
+	font-weight: bold;
+	background-color: #007bff;
+	color: #ffffff;
+}
+
+/* 오른쪽 콘텐츠 스타일 */
+.mypage-content {
+	flex: 1; /* 남은 공간을 오른쪽 콘텐츠가 차지 */
+	padding: 30px; /* 여백 조정 */
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.mypage-content h1 {
+	font-size: 24px;
+	color: #333;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.mypage-content > div {
+	padding: 20px;
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+//1010추가
+.mypage-content .modify-page {
+	@extend .modify-page; /* ModifyPage.scss의 스타일 상속 */
+	width: 130%; /* 커스터마이징: 너비 조정 */
+	max-width: 1200px; /* 커스터마이징: 최대 너비 조정 */
+	padding: 20px; /* 커스터마이징: 여백 추가 */
+	margin: 50px auto; /* 중앙 정렬 */
+}

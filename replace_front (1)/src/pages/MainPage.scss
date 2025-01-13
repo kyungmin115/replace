@@ -1,0 +1,451 @@
+// nav 영역
+.nav-container {
+	.main-banner {
+		position: relative;
+		width: 100%;
+		height: 680px;
+		overflow: hidden;
+
+		.banner-btn-group {
+			display: flex;
+			justify-content: center; // 버튼을 가로로 중앙 정렬
+			align-items: center; // 버튼을 세로로 중앙 정렬
+			position: absolute;
+			width: 100%;
+			top: 84%;
+			z-index: 2; // 버튼이 배너 이미지 위에 위치하도록 설정
+
+			.banner-btn {
+				top: 50%;
+				background-color: transparent;
+				color: white;
+				border: none;
+				font-size: 2rem;
+				cursor: pointer;
+				padding: 0.5rem;
+				z-index: 2;
+			}
+		}
+
+		.banner-slider {
+			display: flex;
+			transition: transform 0.5s ease-in-out;
+
+			.banner-slide {
+				min-width: 100%;
+				height: 680px;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+
+		.banner-nav {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+
+			.nav-dot {
+				width: 12px;
+				height: 12px;
+				border: none;
+				border-radius: 50%;
+				background-color: #ccc;
+				cursor: pointer;
+				transition: background-color 0.3s;
+
+				&.active {
+					background-color: #333;
+				}
+			}
+		}
+	}
+
+	.photo-review-section {
+		margin-top: 40px;
+		padding: 20px;
+
+		h3 {
+			font-size: 1.8rem;
+			margin-bottom: 20px;
+			font-weight: bold;
+		}
+
+		.photo-cards {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 20px;
+
+			.card {
+				text-align: center;
+				border: 1px solid #ddd;
+				border-radius: 10px;
+				overflow: hidden;
+				background: #fff;
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+
+				p {
+					margin: 10px 0;
+					font-size: 1rem;
+					color: #333;
+				}
+
+				span {
+					font-size: 1rem;
+					color: #007bff;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+// footer 영역
+.footer-container {
+	background-color: #f8f9fa;
+	padding: 40px 20px;
+	font-family: "Arial", sans-serif;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+
+	.footer-content {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		//flex-wrap: wrap;
+
+		.footer-contact {
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			flex-direction: column;
+			flex: 1 1 40%;
+			text-align: center;
+			h2 {
+				font-size: 1.8rem;
+				margin-bottom: 10px;
+				color: #007bff;
+			}
+
+			p {
+				font-size: 1rem;
+				line-height: 1.6;
+			}
+		}
+	}
+
+	.footer-bottom {
+		text-align: center;
+		margin-top: 20px;
+		font-size: 0.85rem;
+		line-height: 1.5;
+		color: #666;
+
+		p {
+			margin: 10px 0;
+		}
+
+		.footer-logo {
+			font-size: 1.5rem;
+			font-weight: bold;
+			color: #007bff;
+			margin-top: 10px;
+		}
+	}
+
+	/* 반응형 스타일 */
+	@media (max-width: 768px) {
+		.footer-content {
+			flex-direction: column; /* 세로로 배치 */
+			text-align: center;
+
+			.footer-contact,
+			.footer-form {
+				max-width: 100%; /* 최대 너비 제거 */
+				margin-bottom: 20px;
+			}
+
+			.footer-form .send-btn {
+				align-self: center; /* 버튼 중앙 정렬 */
+			}
+		}
+	}
+}
+
+// // nav 영역
+// .nav-container {
+// 	.main-banner {
+// 		position: relative;
+// 		width: 100%;
+// 		height: 680px;
+// 		overflow: hidden;
+
+// 		.banner-btn-group {
+// 			display: flex;
+// 			justify-content: center; // 버튼을 가로로 중앙 정렬
+// 			align-items: center; // 버튼을 세로로 중앙 정렬
+// 			position: absolute;
+// 			width: 100%;
+// 			top: 84%;
+// 			z-index: 2; // 버튼이 배너 이미지 위에 위치하도록 설정
+
+// 			.banner-btn {
+// 				top: 50%;
+// 				background-color: transparent;
+// 				color: white;
+// 				border: none;
+// 				font-size: 2rem;
+// 				cursor: pointer;
+// 				padding: 0.5rem;
+// 				z-index: 2;
+// 			}
+// 		}
+
+// 		.banner-slider {
+// 			display: flex;
+// 			transition: transform 0.5s ease-in-out;
+
+// 			.banner-slide {
+// 				min-width: 100%;
+// 				height: 680px;
+
+// 				img {
+// 					width: 100%;
+// 					height: 100%;
+// 					object-fit: cover;
+// 				}
+// 			}
+// 		}
+
+// 		.banner-nav {
+// 			position: absolute;
+// 			bottom: 20px;
+// 			left: 50%;
+// 			transform: translateX(-50%);
+// 			display: flex;
+// 			gap: 10px;
+
+// 			.nav-dot {
+// 				width: 12px;
+// 				height: 12px;
+// 				border: none;
+// 				border-radius: 50%;
+// 				background-color: #ccc;
+// 				cursor: pointer;
+// 				transition: background-color 0.3s;
+
+// 				&.active {
+// 					background-color: #333;
+// 				}
+// 			}
+// 		}
+// 	}
+
+// 	.photo-review-section {
+// 		margin-top: 40px;
+// 		padding: 20px;
+
+// 		h3 {
+// 			font-size: 1.8rem;
+// 			margin-bottom: 20px;
+// 			font-weight: bold;
+// 		}
+
+// 		.photo-cards {
+// 			display: grid;
+// 			grid-template-columns: repeat(4, 1fr);
+// 			gap: 20px;
+
+// 			.card {
+// 				text-align: center;
+// 				border: 1px solid #ddd;
+// 				border-radius: 10px;
+// 				overflow: hidden;
+// 				background: #fff;
+
+// 				img {
+// 					width: 100%;
+// 					height: auto;
+// 				}
+
+// 				p {
+// 					margin: 10px 0;
+// 					font-size: 1rem;
+// 					color: #333;
+// 				}
+
+// 				span {
+// 					font-size: 1rem;
+// 					color: #007bff;
+// 					font-weight: bold;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// // footer 영역
+// .footer-container {
+// 	background-color: #2a4c82; /* 배경색 */
+// 	color: #ffffff;
+// 	padding: 5% 10%;
+
+// 	.footer-content {
+// 		display: flex;
+// 		flex-wrap: wrap; /* 반응형 지원 */
+// 		justify-content: space-between;
+// 		align-items: center;
+
+// 		.footer-contact {
+// 			flex: 1; /* 좌측 영역 */
+// 			max-width: 45%; /* 최대 너비 */
+// 			margin-bottom: 60px;
+// 			padding: 0;
+
+// 			h2 {
+// 				font-size: 2.5rem;
+// 				margin-bottom: 20px;
+// 				font-weight: bold;
+// 			}
+
+// 			p {
+// 				font-size: 1rem;
+// 				margin-bottom: 20px;
+// 				line-height: 1.6;
+// 			}
+
+// 			ul {
+// 				list-style: none;
+// 				padding: 0;
+
+// 				li {
+// 					font-size: 1rem;
+// 					margin-bottom: 10px;
+// 					display: flex;
+// 					align-items: center;
+
+// 					a {
+// 						color: #ffffff;
+// 						text-decoration: underline;
+
+// 						&:hover {
+// 							color: #d1e1ff;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+
+// 		.footer-form {
+// 			flex: 1; /* 우측 영역 */
+// 			max-width: 45%; /* 최대 너비 */
+// 			margin: 0 auto;
+
+// 			form {
+// 				display: flex;
+// 				flex-direction: column;
+// 				margin-top: 50px;
+
+// 				input,
+// 				textarea {
+// 					width: 100%;
+// 					padding: 15px;
+// 					margin-bottom: 5px;
+// 					margin-top: 10px;
+// 					border: 1px solid #ffffff;
+// 					border-radius: 5px;
+// 					background-color: transparent;
+// 					color: #ffffff;
+// 					font-size: 1rem;
+
+// 					&::placeholder {
+// 						color: #d1e1ff;
+// 					}
+
+// 					&:focus {
+// 						border-color: #d1e1ff;
+// 						outline: none;
+// 					}
+// 				}
+
+// 				textarea {
+// 					resize: none;
+// 				}
+
+// 				.footer-privacy {
+// 					display: flex;
+// 					align-items: center;
+// 					margin-bottom: 20px;
+
+// 					input {
+// 						margin-right: 10px;
+// 					}
+
+// 					label {
+// 						font-size: 0.9rem;
+// 					}
+// 				}
+
+// 				.send-btn {
+// 					background-color: #ffffff;
+// 					color: #2a4c82;
+// 					border: none;
+// 					padding: 10px 20px;
+// 					border-radius: 5px;
+// 					font-size: 1rem;
+// 					cursor: pointer;
+// 					align-self: flex-end; /* 버튼을 오른쪽 정렬 */
+
+// 					&:hover {
+// 						background-color: #d1e1ff;
+// 						color: #1a3a64;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+
+// 	.footer-bottom {
+// 		text-align: center;
+// 		margin-top: 30px;
+// 		font-size: 0.9rem;
+// 		line-height: 1.6;
+
+// 		.footer-logo {
+// 			margin-top: 20px;
+// 			font-size: 1.5rem;
+// 			font-weight: bold;
+// 		}
+// 	}
+
+// 	/* 반응형 스타일 */
+// 	@media (max-width: 768px) {
+// 		.footer-content {
+// 			flex-direction: column; /* 세로로 배치 */
+// 			text-align: center;
+
+// 			.footer-contact,
+// 			.footer-form {
+// 				max-width: 100%; /* 최대 너비 제거 */
+// 				margin-bottom: 20px;
+// 			}
+
+// 			.footer-form .send-btn {
+// 				align-self: center; /* 버튼 중앙 정렬 */
+// 			}
+// 		}
+// 	}
+// }
