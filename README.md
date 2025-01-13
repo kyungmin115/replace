@@ -23,3 +23,10 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
 
 - 팀장 : 이중모
 - 팀원 : 김지수, 이경민, 김창엽
+
+### 개발환경
+- 언어 : Java 17
+- 개발 도구 : SpringBoot Spring Security, React, Redux-toolkit, Python, AWS
+- IDE : IntelliJ
+- 운영 체제 : Windows
+- Java SDK : Oracle JDK 17
