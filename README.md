@@ -45,13 +45,41 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
 #### 반응형
 - PC
 - ![image](https://github.com/user-attachments/assets/0e50e1a1-6464-4c4e-a658-be2188acff67)
+  
 - 모바일
 - ![image](https://github.com/user-attachments/assets/c94c2193-5f89-4a1b-aa62-3389df99f4ac)
 
-#### 로그인과 로그아웃
+
+#### 로그인 처리
+![image](https://github.com/user-attachments/assets/d7cc1cd8-5b81-4074-9216-584336d7d694)
 ![image](https://github.com/user-attachments/assets/a10733de-aa27-4bbf-b544-7ca75df4f46b)
 
+#### 장바구니
+![image](https://github.com/user-attachments/assets/69c4bc82-63c3-43ac-bcc8-6474321698d5)
+![image](https://github.com/user-attachments/assets/7ef0ba30-20b8-4b97-b26a-2d68562c2d64)
+![image](https://github.com/user-attachments/assets/4b093661-d2e9-4cb1-b7d8-3926e6896721)
+
+#### 이미지 검색
+![image](https://github.com/user-attachments/assets/edaa4699-5fcb-4c44-a060-73a5bf8c4069)
+![image](https://github.com/user-attachments/assets/e156da96-8fa9-4d25-a9d6-f38bccc6e388)
+![image](https://github.com/user-attachments/assets/12361f78-60a0-4703-8928-8b6c1918028d)
+![image](https://github.com/user-attachments/assets/f5ebef84-8f02-4058-be1d-0f82f927862d)
+
+#### 고객센터
+![image](https://github.com/user-attachments/assets/95a43c6f-bf65-49bf-b07f-8b7bee16c408)
+![image](https://github.com/user-attachments/assets/ec6680d1-1fc5-48d5-bf57-7ec8c061fc3e)
 
 
+
+
+
+
+
+
+
+
+
+
+https://www.youtube.com/watch?v=zPMYh7Ai_gs
 
 
