@@ -10,7 +10,7 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
 ## 개발 기간
 
 - 24.11.25(월) ~ 25.01.10(금)
-- 
+
 ### 맴버
 <table>
   <tr>
@@ -44,10 +44,10 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
 
 #### 반응형
 - PC
-- ![image](https://github.com/user-attachments/assets/0e50e1a1-6464-4c4e-a658-be2188acff67)
+  ![image](https://github.com/user-attachments/assets/0e50e1a1-6464-4c4e-a658-be2188acff67)
   
 - 모바일
-- ![image](https://github.com/user-attachments/assets/c94c2193-5f89-4a1b-aa62-3389df99f4ac)
+ ![image](https://github.com/user-attachments/assets/c94c2193-5f89-4a1b-aa62-3389df99f4ac)
 
 
 #### 로그인 처리
