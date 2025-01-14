@@ -25,29 +25,26 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
 
 - 팀장 : 이중모
 - 팀원 : 김지수, 이경민, 김창엽
-  
+
+ ------------------------------------------------------------------------------------
 - ## 목차
 
-### 📊 I. 개발 환경
+#### 📊 I. 개발 환경
 
-### 🛠II. 주요 기능 & 설명
+#### 🛠 II. 주요 기능 & 설명
 
-### 📑 III. 배포
+#### 📑 III. 배포
 
-### ☄️ IV. 트러블 슈팅  
+#### 💻 IV.시연 영상
 
-### 📑 V. 프로젝트 설계
 
-### 🐱 VI. 팀원 소개
-
-### 🙇 VII. 느낀 점 및 참고사항
-
+--------------------------------------------------------------------------------------
 
 ### 📊I.개발환경
 
 - 언어 : <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
 - 개발 도구 :<img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">,   <img src="https://img.shields.io/badge/springsecurity-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white"> ,<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">, <img src="https://img.shields.io/badge/redux-764ABC?style=for-the-badge&logo=redux&logoColor=white">
-, <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">,<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> , <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">,<img src="https://img.shields.io/badge/sass-CC6699?style=for-the-badge&logo=sass&logoColor=white">
+, <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">,<img src="https://img.shields.io/badge/tensorflow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white">,<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> , <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">,<img src="https://img.shields.io/badge/sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"> ,<img src="https://img.shields.io/badge/mariadb-003545?style=for-the-badge&logo=mariadb&logoColor=white">
 - IDE : <img src="https://img.shields.io/badge/intellij-000000?style=for-the-badge&logo=intellijidea&logoColor=white">
 - 운영 체제 : Windows
 - Java SDK : Oracle JDK 17
