@@ -14,7 +14,7 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
 
 - 24.11.25(월) ~ 25.01.10(금)
 
-### 맴버
+### 멤버
 
 <table>
   <tr>
@@ -69,10 +69,10 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
    <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white">
    <img src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white">
 
--DataBase : MariaDB
+- DataBase : MariaDB
 
 - Sever : AWS
-- ---
+- ----------------------------------------------------------------------------------------------------------
 ## ERD
 ![image](https://github.com/user-attachments/assets/92f8894c-d50e-4d90-909e-4e3e157ad0ef)
 
