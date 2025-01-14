@@ -62,8 +62,10 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
 ---
 
 ##  🛠II.주요 기능
+![Animation](https://github.com/user-attachments/assets/8623b2b5-b333-4fb5-aec1-e0a7aa84d105)
 
 ### 반응형
+![Animation](https://github.com/user-attachments/assets/9e6ae236-6d46-40bd-afcf-65239dd9ca11)
 
 - PC
   ![image](https://github.com/user-attachments/assets/0e50e1a1-6464-4c4e-a658-be2188acff67)
@@ -74,6 +76,7 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
  -------------------------------------------------------------------------------------
 
 ### 로그인 처리
+![Animation1](https://github.com/user-attachments/assets/b6c6b7ee-305f-4481-9c40-b7f811de229e)
 
 #### action과 reducer 처리를 위한 slice 생성
 ![image](https://github.com/user-attachments/assets/fd97172b-766c-4dd3-abfe-30b6ac8c39ee)
@@ -84,6 +87,7 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
 
  -------------------------------------------------------------------------------------
 ### 장바구니
+![Animation2](https://github.com/user-attachments/assets/9f538332-6270-4554-a8ac-c7ef3f54c207)
 
 #### 전역에서 장바구니 상태를 관리할 store 생성
 #### extraReducers(비동기)와 createAsyncThunk를 활용한 로직 설정
@@ -94,6 +98,7 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
 
  -------------------------------------------------------------------------------------
 ### 이미지 검색
+![Animation3](https://github.com/user-attachments/assets/41556839-d1f7-48c6-a85a-9ed89759d290)
 
 #### DB에 있는 굿즈 이미지와 굿즈 이름만을 가지고 데이터 셋 제작 및 이미지 전처리, 레이블 숫자로 변환 후 oneHot Encoding
 #### MobileNetV2 모델을 기반으로 새롭게 데이터를 주입하여 파인 튜닝 후 모델 학습
@@ -105,6 +110,7 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
 
  -------------------------------------------------------------------------------------
 ### 고객센터
+![Animation4](https://github.com/user-attachments/assets/d9090d31-3c18-463a-b787-2ab2c8d6a12c)
 
 #### loginState 메서드를 사용하여 관리자(ROLE: ADMIN)만 확인 및 댓글 작성할 수 있도록 구성
 ![image](https://github.com/user-attachments/assets/95a43c6f-bf65-49bf-b07f-8b7bee16c408)
