@@ -25,26 +25,26 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
 - 팀장 : 이중모
 - 팀원 : 김지수, 이경민, 김창엽
   
-- #### 목차
+- ## 목차
 
-##### 📊 I. 개발 환경
+### 📊 I. 개발 환경
 
-##### 🛠II. 주요 기능 & 설명
+### 🛠II. 주요 기능 & 설명
 
-##### 📑 III. 배포
+### 📑 III. 배포
 
-##### ☄️ IV. 트러블 슈팅  
+### ☄️ IV. 트러블 슈팅  
 
-##### 📑 V. 프로젝트 설계
+### 📑 V. 프로젝트 설계
 
-##### 🐱 VI. 팀원 소개
+### 🐱 VI. 팀원 소개
 
-##### 🙇 VII. 느낀 점 및 참고사항
+### 🙇 VII. 느낀 점 및 참고사항
 
 
 ### 📊I.개발환경
-- 언어 : Java 17
-- 개발 도구 : SpringBoot Spring Security, React, Redux-toolkit, Python, AWS
+- 언어 : <img src="https://img.shields.io/badge/java17-007396?style=for-the-badge&logo=java&logoColor=white"> 
+- 개발 도구 :<img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">, springsecurity,<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">, Redux-toolkit, Python, AWS
 - IDE : IntelliJ
 - 운영 체제 : Windows
 - Java SDK : Oracle JDK 17
@@ -75,15 +75,18 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
 ### 로그인 처리
 
 #### action과 reducer 처리를 위한 slice 생성
-![image](https://github.com/user-attachments/assets/a2a7bd6f-2f55-4014-8e47-bfc09930716d)
-
+![image](https://github.com/user-attachments/assets/fd97172b-766c-4dd3-abfe-30b6ac8c39ee)
 
 #### 쿠키를 통한 로그인 정보 로딩
-![image](https://github.com/user-attachments/assets/a10733de-aa27-4bbf-b544-7ca75df4f46b)
+![image](https://github.com/user-attachments/assets/d69525c7-c16e-4e83-b43b-41ddd8d06bdf)
+
 
  -------------------------------------------------------------------------------------
 ### 장바구니
 
+#### 전역에서 장바구니 상태를 관리할 store 생성
+#### extraReducers(비동기)와 createAsyncThunk를 활용한 로직 설정
+#### 장바구니 아이템 상태 변경
 ![image](https://github.com/user-attachments/assets/69c4bc82-63c3-43ac-bcc8-6474321698d5)
 ![image](https://github.com/user-attachments/assets/7ef0ba30-20b8-4b97-b26a-2d68562c2d64)
 ![image](https://github.com/user-attachments/assets/4b093661-d2e9-4cb1-b7d8-3926e6896721)
@@ -111,11 +114,11 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
  -------------------------------------------------------------------------------------
 ## 📑 III. 배포
 
-1.IAM을 통한 권한과 역할 생성<br>
-2.EC2 가상 서버로 애플리케이션 실행<br>
-3.RDS를 활용한 데이터베이스 설정 수정<br>
-4.Elastic Beanstalk를 이용한 배포 자동화 
+### 1. IAM을 통한 권한과 역할 생성<br>
+### 2. EC2 가상 서버로 애플리케이션 실행<br>
+### 3. RDS를 활용한 데이터베이스 설정 수정<br>
+### 4. Elastic Beanstalk를 이용한 배포 자동화 
 ![image](https://github.com/user-attachments/assets/17fbf62c-c4fa-4aaf-a25d-273bd73bba03)
  -------------------------------------------------------------------------------------
-## 💻  IV.시연 영상
+## 💻 IV.시연 영상
 https://www.youtube.com/watch?v=zPMYh7Ai_gs
