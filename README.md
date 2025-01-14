@@ -1,3 +1,4 @@
+# FullStack_Team_Project_RE:PLACE
 SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판매 사이트
 
 ## 프로젝트 소개
@@ -23,8 +24,25 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
 
 - 팀장 : 이중모
 - 팀원 : 김지수, 이경민, 김창엽
+  
+- #### 목차
 
-### 개발환경
+##### 📊 I. 개발 환경
+
+##### 🛠II. 주요 기능 & 설명
+
+##### 📑 III. 배포
+
+##### ☄️ IV. 트러블 슈팅  
+
+##### 📑 V. 프로젝트 설계
+
+##### 🐱 VI. 팀원 소개
+
+##### 🙇 VII. 느낀 점 및 참고사항
+
+
+### 📊I.개발환경
 - 언어 : Java 17
 - 개발 도구 : SpringBoot Spring Security, React, Redux-toolkit, Python, AWS
 - IDE : IntelliJ
@@ -40,19 +58,24 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
 ![image](https://github.com/user-attachments/assets/6f139c1b-74e4-4484-8ed2-3228bf159743)
 
 ---
-## 주요 기능
+##  🛠II.주요 기능
 
-#### 반응형
+### 반응형
 - PC
   ![image](https://github.com/user-attachments/assets/0e50e1a1-6464-4c4e-a658-be2188acff67)
   
 - 모바일
+  
  ![image](https://github.com/user-attachments/assets/c94c2193-5f89-4a1b-aa62-3389df99f4ac)
 
+### 로그인 처리
 
-#### 로그인 처리
+#### action과 reducer 처리를 위한 slice 생성
 ![image](https://github.com/user-attachments/assets/d7cc1cd8-5b81-4074-9216-584336d7d694)
+
+#### 쿠키를 통한 로그인 정보 로딩
 ![image](https://github.com/user-attachments/assets/a10733de-aa27-4bbf-b544-7ca75df4f46b)
+
 
 #### 장바구니
 ![image](https://github.com/user-attachments/assets/69c4bc82-63c3-43ac-bcc8-6474321698d5)
@@ -71,15 +94,24 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
 
 
 
+## 📑 III. 배포
+
+1.IAM을 통한 권한과 역할 생성<br>
+2.EC2 가상 서버로 애플리케이션 실행<br>
+3.RDS를 활용한 데이터베이스 설정 수정<br>
+4.Elastic Beanstalk를 이용한 배포 자동화 
+![image](https://github.com/user-attachments/assets/17fbf62c-c4fa-4aaf-a25d-273bd73bba03)
 
 
-
-
-
-
-
-
-## 시연 영상
+## 💻  IV.시연 영상
 https://www.youtube.com/watch?v=zPMYh7Ai_gs
+
+
+
+
+
+
+
+
 
 
