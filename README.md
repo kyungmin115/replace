@@ -84,9 +84,9 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
 ---
 
 ##  🛠II.주요 기능
-![Animation](https://github.com/user-attachments/assets/8623b2b5-b333-4fb5-aec1-e0a7aa84d105)
 
 ### 반응형
+![Animation](https://github.com/user-attachments/assets/8623b2b5-b333-4fb5-aec1-e0a7aa84d105)
 ![Animation](https://github.com/user-attachments/assets/9e6ae236-6d46-40bd-afcf-65239dd9ca11)
 
 - PC
