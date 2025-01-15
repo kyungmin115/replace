@@ -64,7 +64,7 @@ SpringBoot, React, Python, AWS를 이용한 공연 예약 예매와 굿즈 판�
 
    <img src="https://img.shields.io/badge/intellij-000000?style=for-the-badge&logo=intellijidea&logoColor=white">
    
-  -OS
+- OS
   
    <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white">
    <img src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white">
